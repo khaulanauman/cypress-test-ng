@@ -1,5 +1,7 @@
+import "cypress-visual-regression/dist/command";
 import "./commands";
+
 Cypress.on('uncaught:exception', (err, runnable) => {
-  // returning false here prevents Cypress from failing the test
-  return false
-})
+  // prevents third-party JS errors from failing tests
+  return false;
+});
