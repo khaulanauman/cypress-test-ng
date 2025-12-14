@@ -1,14 +1,13 @@
-describe("SauceDemo - Login (Data Driven)", () => {
+//using custom commands
+describe("SauceDemo - Login using Custom Command", () => {
 
   beforeEach(() => {
     cy.visit("/");
   });
 
-  it("Logs in using fixture data", () => {
-    cy.fixture("users").then((users) => {
-      cy.login(users.validUser.username, users.validUser.password);
-      cy.url().should("include", "/inventory.html");
-    });
+  it("Logs in successfully", () => {
+    cy.login("standard_user", "secret_sauce");
+    cy.url().should("include", "/inventory.html");
   });
 
 });
