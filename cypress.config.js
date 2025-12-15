@@ -2,6 +2,8 @@ const { defineConfig } = require("cypress");
 require("dotenv").config();
 
 module.exports = defineConfig({
+  projectId: 'oe6r7p',
+  
   e2e: {
     baseUrl: process.env.BASE_URL,
     chromeWebSecurity: false,
