@@ -14,7 +14,6 @@
   "description": "",
   "devDependencies": {
     "cypress": "^15.7.1",
-    "cypress-image-snapshot": "^4.0.1",
     "cypress-visual-regression": "^5.3.0",
     "dotenv": "^17.2.3",
     "neat-csv": "^7.0.0",
